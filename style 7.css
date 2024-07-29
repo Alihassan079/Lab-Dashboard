@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    position: relative;
+   
+}
+/* header start */
+.header ul a sup{
+font-size: 10px;
+}
+.menu-container {
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 24px;
+}
+
+/* Default desktop view */
+
+
+/* navbar start */
+.nav{
+    height: 100vh;
+    overflow: hidden;
+    background-color: darkblue;
+    color: white;
+}
+.side-bar{
+    background-color: darkblue;
+}
+/* .nav-items li:hover {
+   background-color: rgba(9, 44, 243, 0.63); /* Change to your desired hover color */
+   /* border-radius: 10px;
+   border: none;
+}  */
+
+
+/* navbar end */
+/* cards start */
+
+.card1{
+    background-color: green;
+    height: 150px;
+    max-width: 300px;
+}
+.card2{
+    background-color:darkblue ;
+    height: 150px;
+    max-width: 300px;
+}
+.card3{
+    background-color: rgb(8, 216, 8);
+    height: 150px;
+   max-width:   300px;
+}
+/* cards end */
+/* form Table start */
+.list-header{
+    background-color:darkblue ;
+    height: 65px; 
+}
+.search-icon i{
+    position: relative;
+    right: 30px;
+    top: 12px; 
+}
+.item-sort i{
+        position: relative;
+        right: 45px;
+        top: 12px;
+}
+.doc-file ul{
+    background-color: green;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px; /* Add this line */
+    overflow: hidden; /* Add this line to ensure the radius is applied properly */
+}
+th {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+.no-data td {
+    background-color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    color: lightgray;;
+}
+.no-data td {
+    padding: 50px 0; /* Adjust padding as needed to ensure space is maintained */
+}
+.btn-1{
+    background-color: darkblue;
+
+
+}
+    .btn-2{
+        background-color: green;
+    
+}
+
+
+
+/* form Table start */
+@media only screen and (min-width: 320px) and (max-width: 520px) {
+    .search-icon{
+        margin-top: 10px;
+    }
+    .btn-1{
+    
+        width: 100%;
+    }
+    .btn-2{
+        margin-top: 10px;
+        width: 100%;
+    }
+/* hamburger */
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: -40px;
+        right: 10px;   
+        
+    }
+   
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Hide off-screen to the left */
+        width: 250px;
+        height: 100%;
+        background: white;
+        padding: 1em;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease-in-out;
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    .menu-items.show {
+        left: 0; /* Slide in from the left */
+    }
+
+    .menu-items ul {
+        flex-direction: column;
+     
+    }
+    .menu-items ul li {
+        margin-bottom: 10px;
+    }
+
+    /* side bar */
+    .side-bar .nav-pills {
+        /* display: flex;
+        flex-direction: row; */
+        justify-content: space-around;
+        /* align-items: center; */
+    }
+    .side-bar .nav-link {
+        /*  display: flex;
+        justify-content: center;
+        align-items: center;*/   
+        color: white;
+        background-color: darkblue;
+        /* transition: transform 0.3s ease; */
+        font-size: 16px;
+    }
+    .side-bar .nav-link span {
+        display: none;
+    }
+    .side-bar .nav-link.active span {
+        display: inline;
+        
+    }
+    /* .side-bar .nav-link.active {
+        transform: scale(1);
+    } */
+    .nav-pills .nav-link.active{
+        background-color: darkblue;
+        
+    }
+    .side-bar a {
+        background-color: darkblue;
+    }
+
+    .nav {
+        background-color: transparent;
+        height: auto;
+    }
+
+    .side-bar {
+        background-color: transparent;
+    }
+
+}
+
+
+
+
+
